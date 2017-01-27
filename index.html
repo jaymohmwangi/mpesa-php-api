@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="jamesmwangi@bradetech.com ">
+
+    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+
+    <title>Mpesa Api</title>
+
+    <link href="css/metro.css" rel="stylesheet">
+    <link href="css/metro-icons.css" rel="stylesheet">
+    <link href="css/metro-responsive.css" rel="stylesheet">
+    <link href="css/metro-schemes.css" rel="stylesheet">
+    <link href="css/metro-colors.css" rel="stylesheet">
+ <script src="//cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/metro.js"></script>
+   
+</head>
+<body>
+    <div class="container">
+        <header class="margin20 no-margin-left no-margin-right">
+            <div class="clear-float">
+                <div class="place-right">
+                    <button class="button primary"onclick="metroDialog.open('#dialog4')"><span class="mif-cart"></span> Checkout with Mpesa (2)
+                    </button>
+                </div>
+                <div data-role="dialog" id="dialog4" class="padding20" data-close-button="true" data-type="warning">
+               <h2>Check Out Here</h2>
+            <!-- input with placeholder -->
+<form method="post" action="core/pay_with_mpesa.php">
+<div class="input-control text">
+    <input type="text" placeholder="Mobile Number"  required="" name="number" >
+</div>
+<div class="input-control text">
+    <input type="text" value="500" readonly=""  name="amount"  >
+</div><button class="button success" onclick="pushMessage('success')"><span class="mif-money"></span> Pay Now</button>
+</form>
+<div class="listview">
+       <div class="list">
+        <img src="img/cabbage.jpg" class="list-icon">
+        <span class="list-title">Cabbage </span>
+        <span class="list-title"> Ksh.200 </span>
+    </div>
+        <div class="list">
+        <img src="img/tomatoes.jpg" class="list-icon">
+        <span class="list-title">Tomatoes </span>
+        <span class="list-title"> Ksh.300 </span>
+    </div>
+    <div class="list">
+        <span class="list-title">Totals </span>
+        <span class="list-title"> Ksh.500 </span>
+    </div>
+</div>
+
+        </div>
+
+                <a class="place-left" href="#" title="">
+                    <h1>Mama Mboga Kiosk</h1>
+                </a>
+            </div>
+
+                   </header>
+
+        <div class="main-content clear-float">
+            <div class="tile-area no-padding">
+                <div class="tile-group no-margin no-padding" style="width: 100%">
+                   
+
+                    <div class="tile-big tile-wide-y ol-transparent" data-role="tile">
+                        <div class="tile-content">
+                            <div class="carousel" data-role="carousel" data-height="100%" data-width="100%" data-controls="false">
+                                <div class="slide">
+                                    <img src="https://3dwnh01icn0h133s00sokwo1-wpengine.netdna-ssl.com/wp-content/uploads/2015/06/Screen-Shot-2015-06-25-at-6.42.37-AM.jpg" data-role="fitImage" data-format="fill">
+                                </div>
+                             
+                            </div>
+                        </div>
+                    </div>
+                   
+                      <div class="tile bg-green fg-white" data-role="tile">
+                        <div class="tile-content iconic">
+                        Home
+                            <span class="icon mif-home"></span>
+                        </div>
+                    </div>
+ 
+                    <div class="tile bg-orange fg-white" data-role="tile">
+                        <div class="tile-content iconic">
+                            <span class="icon mif-motorcycle"></span>
+                            Free Delivery
+                        </div>
+                    </div>
+                    <div class="tile bg-teal fg-white" data-role="tile">
+                        <div class="tile-content iconic">
+                            <span class="icon mif-shop"></span>
+                            Our Store
+                        </div>
+                    </div>
+                    <div class="tile bg-red fg-white" data-role="tile">
+                        <div class="tile-content iconic">
+                            <span class="icon mif-shopping-basket2"></span>
+                            Inside the Basket(2)
+                        </div>
+                    </div>
+                     <div class="tile bg-indigo fg-white" data-role="tile">
+                        <div class="tile-content iconic">
+                            <span class="icon mif-contacts-dialer"></span>
+                          Contact us
+                        </div>
+                    </div>
+                     <div class="tile bg-grayLight fg-white" data-role="tile">
+                        <div class="tile-content iconic">
+                        payments
+                            <span class="icon mif-coins"></span>
+                        </div>
+                    </div>
+ <div class="tile bg-green fg-white" data-role="tile">
+                        <div class="tile-content iconic">
+                        Get Directions
+                            <span class="icon mif-map2"></span>
+                        </div>
+                    </div>
+                   <div class="tile bg-lightBlue fg-white" data-role="tile">
+                        <div class="tile-content iconic">
+                            <span class="icon mif-location"></span>
+                            Delivery Locations
+                        </div>
+                    </div>
+                   
+
+             
+        <footer>
+            <div class="bottom-menu-wrapper">
+                <ul class="horizontal-menu compact">
+                    <li><a>&copy; 2017 Bt Softwares</a></li>
+                    <li class="place-right"><a href="#">Delivery Points</a></li>
+                    <li class="place-right"><a href="#">Store</a></li>
+                    <li class="place-right"><a href="#">About Mama Mboga</a></li>
+                    <li class="place-right"><a href="#">Help</a></li>
+                    <li class="place-right"><a href="#">Feedback</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
