@@ -1,1 +1,2 @@
-"# mpesa-php-api" 
+# mpesa-api
+Php Mpesa api sample code 
